@@ -6,7 +6,7 @@ tasks:
       source ~/.bashrc
     init: |
       echo "Wait for the installation"
-      yes | sdk i java 8.0.232-open
+      yes | sdk i java
       sdk i kotlin
       sdkmanager --update
       yes | sdkmanager --licenses

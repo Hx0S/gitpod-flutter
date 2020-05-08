@@ -3,24 +3,25 @@ import 'package:flutter/material.dart';
 import 'SearchListViewExample.dart';
 // import 'ViewPdf.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'ENTdbCenter',
-    home: FirstRoute(),
-  ));
-}
-//void main() => runApp(MyApp());
+// void main() {
+//   runApp(
+//   );
+// }
+void main() => runApp(MyApp());
 
-class FirstRoute extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+    title: 'ENTdbCenter',
+    home: Scaffold(
       appBar: AppBar(
         title: Text('ENTdbCenter'),
       ),
       body: SearchListViewExample(),
 
-    );
+    ),
+  );
   }
 }
 

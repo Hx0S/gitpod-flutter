@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'ViewPdf.dart';
+
 class SearchListViewExample extends StatefulWidget {
   @override
   _SearchListViewExampleState createState() => _SearchListViewExampleState();
@@ -76,7 +78,13 @@ class _SearchListViewExampleState extends State<SearchListViewExample> {
           itemCount: dogsBreedList.length,
           itemBuilder: (context,index){
             return ListTile(
-              title: Text(dogsBreedList[index],)
+              title: Text(dogsBreedList[index],),
+              onTap: () => Navigator.push(
+               context,
+               MaterialPageRoute(
+                 builder: (context) => Viewpdf()
+                 ),
+              ),
             );
           }),
     );

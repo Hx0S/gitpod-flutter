@@ -20,6 +20,8 @@ class _SearchListViewExampleState extends State<SearchListViewExample> {
     _fetchDogsBreed();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -37,6 +39,18 @@ class _SearchListViewExampleState extends State<SearchListViewExample> {
           ),
         )
     );
+          // Center(
+      //   child: RaisedButton(
+      //     child: Text('Open route'),
+      //     onPressed: () {
+      //       Navigator.push(
+      //         context,
+      //         MaterialPageRoute(builder: (context) => ViewPdf()),
+      //       );
+      //     },
+      //   ),
+
+      // ),
   }
 
   Widget _searchBar(){

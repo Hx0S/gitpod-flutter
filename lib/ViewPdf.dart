@@ -17,11 +17,8 @@ class _ViewpdfState extends State<Viewpdf> {
   @override
 
   void initState() {
-
-    super.initState();
-
     loadfile();
-
+    super.initState();
   }
 
    loadfile() async {

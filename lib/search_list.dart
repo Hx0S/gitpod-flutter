@@ -9,7 +9,7 @@ class SearchList extends StatefulWidget {
 
 class _SearchListState extends State<SearchList>
 {
-  Widget appBarTitle = new Text("Search Sample", style: new TextStyle(color: Colors.white),);
+  Widget appBarTitle = new Text("ЕНТ Поисковик", style: new TextStyle(color: Colors.white),);
   Icon actionIcon = new Icon(Icons.search, color: Colors.white,);
   final key = new GlobalKey<ScaffoldState>();
   final TextEditingController _searchQuery = new TextEditingController();
@@ -44,17 +44,17 @@ class _SearchListState extends State<SearchList>
 
   void init() {
     _list = List();
-    _list.add("Google");
-    _list.add("IOS");
-    _list.add("Andorid");
-    _list.add("Dart");
-    _list.add("Flutter");
-    _list.add("Python");
-    _list.add("React");
-    _list.add("Xamarin");
-    _list.add("Kotlin");
-    _list.add("Java");
-    _list.add("RxAndroid");
+    _list.add("Вопрос по ент (1)");
+    _list.add("Вопрос по ент (2)");
+    _list.add("Вопрос по ент (3)");
+    _list.add("Вопрос по ент (4)");
+    _list.add("Вопрос по ент (5)");
+    _list.add("Вопрос по ент (6)");
+    _list.add("Вопрос по ент (7)");
+    _list.add("Вопрос по ент (8)");
+    _list.add("Вопрос по ент (9)");
+    _list.add("Вопрос по ент (10)");
+    _list.add("Вопрос по ент (11)");
   }
 
   @override
@@ -133,7 +133,7 @@ class _SearchListState extends State<SearchList>
     setState(() {
       this.actionIcon = new Icon(Icons.search, color: Colors.white,);
       this.appBarTitle =
-      new Text("Search Sample", style: new TextStyle(color: Colors.white),);
+      new Text("ЕНТ Поисковик", style: new TextStyle(color: Colors.white),);
       _isSearching = false;
       _searchQuery.clear();
     });

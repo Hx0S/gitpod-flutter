@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gitpodflutter/db_helper.dart';
 
 class SearchList extends StatefulWidget {
   SearchList({ Key key }) : super(key: key);
@@ -36,14 +37,19 @@ class _SearchListState extends State<SearchList>
 
   @override
   void initState() {
+    DBHelper().initDb();
     super.initState();
     _isSearching = false;
     init();
 
   }
 
-  void init() {
+  void init() async {
     _list = List();
+    
+    var _query = await (await DBHelper().db).rawQuery("SELECT text FROM * ");
+    
+    //print(_list.toString());
     _list.add("Вопрос по ент (1)");
     _list.add("Вопрос по ент (2)");
     _list.add("Вопрос по ент (3)");
@@ -55,6 +61,7 @@ class _SearchListState extends State<SearchList>
     _list.add("Вопрос по ент (9)");
     _list.add("Вопрос по ент (10)");
     _list.add("Вопрос по ент (11)");
+    _list.add(_query[_query.length].keys.toString());
   }
 
   @override
